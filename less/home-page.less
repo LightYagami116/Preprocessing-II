@@ -16,10 +16,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /*@media(max-width: 500px){
+    @media(max-width: 500px){
       flex-direction: column;
-      width: 100vw;
-    }*/
+      .text-content{
+        width: 100% !important;
+        +.img-content{width: 100%;margin-left: 5%;}
+      }
+    }
 
 
 
@@ -68,7 +71,15 @@
     display: flex;
     justify-content: space-between;
     @media(max-width: 500px){
-      
+      flex-direction: column;
+      .destination{
+        width: 100% !important;
+      }
+      .btn{
+        width: 60%;
+        margin: 10px auto !important;
+        padding: 10px !important;
+      }
     }
 
     .destination {
