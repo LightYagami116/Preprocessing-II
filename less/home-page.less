@@ -1,6 +1,6 @@
 .home {
   @media(max-width: 500px){
-    border: 2px solid var(--yellow);
+    //border: 2px solid var(--yellow);
     padding: 0 10px;
     .header{
       img{margin-top: 0 !important;}
@@ -44,6 +44,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media(max-width: 500px){
+      .img-content{
+      width: 100%;margin-left: 5%;
+      order: 1;
+    }
+  }
 
     .text-content {
       padding-left: 1%;

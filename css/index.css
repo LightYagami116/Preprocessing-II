@@ -214,7 +214,6 @@ img {
 }
 @media (max-width: 500px) {
   .home {
-    border: 2px solid var(--yellow);
     padding: 0 10px;
   }
   .home .header img {
@@ -259,6 +258,13 @@ img {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    margin-left: 5%;
+    order: 1;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
